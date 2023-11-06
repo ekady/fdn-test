@@ -1,9 +1,7 @@
 'use client';
 
-import type { Metadata } from 'next';
 import { Provider } from 'react-redux';
 import { Inter } from 'next/font/google';
-
 
 import { BaseCategoryMenu, BaseNavbar, IBaseCategoryMenuProps, BaseFooter, BaseContainer, BaseAdsBox } from 'lib-components';
 
@@ -11,11 +9,6 @@ import './_assets/styles/globals.css';
 import { store } from './_store';
 
 const inter = Inter({ subsets: ['latin'] });
-
-export const metadata: Metadata = {
-  title: 'Female Daily',
-  description: 'Situs Jual Beli Kosmetik dan Skincare',
-};
 
 const categories: IBaseCategoryMenuProps['categories'] = [
   { name: 'skincare', to: '#skincare' },
